@@ -57,14 +57,14 @@
 }
 .s2_text h2 {
     font-family: 'bmjua',sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #63ab00;
     margin-bottom: 15px;
     letter-spacing: 18px;
 }
 .s2_text h1 {
     font-family: 'bmjua',sans-serif;
-    font-size: 36px;
+    font-size: 55px;
     color: #333;
 }
 .s2_boxArea {
@@ -183,7 +183,7 @@
 }
 .s3_textArea h2 {
     font-family: 'bmjua',sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #63ab00;
     margin-bottom: 15px;
     letter-spacing: 18px;
@@ -191,7 +191,7 @@
 .s3_textArea h1 {
     color: #333;
     font-family: 'bmjua',sans-serif;
-    font-size: 36px;
+    font-size: 55px;
 }
 #section4 {
     width: 100%;

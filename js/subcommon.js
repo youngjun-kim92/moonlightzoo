@@ -2,11 +2,11 @@ $(document).ready(function() {
     $(".btn").click(function () {
         if($(".btn").hasClass('btn_active')) {
             $(this).removeClass('btn_active');
-            $('.hidden_menu').slideUp('slow');
+            $('.hidden_menu>ul').slideUp('slow');
         }
         else {
             $(this).addClass('btn_active');
-            $('.hidden_menu').slideDown('slow');
+            $('.hidden_menu>ul').slideDown('slow');
         }   
     });
     $(".share_btn").click(function () {

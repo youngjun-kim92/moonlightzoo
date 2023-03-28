@@ -130,18 +130,7 @@ img {
     font-weight: bold;
 }
 .btn_active {
-    height: 70px;
-    width: 230px;
-    position: relative;
-    text-align: left;
-    padding-left: 1px;
     background-image: url(images/loca_arrow_on.png);
-    background-position-y: 50%;
-    background-position-x: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    border-right: 1px solid #ddd;
-    background-color: transparent;
     cursor: pointer;
 }
 .btn span {
@@ -152,12 +141,12 @@ img {
 }
 .hidden_menu {
     /* overflow: hidden; */
-    display: none;
+    display: block;
     height: 0;
     position: relative;
 }
 .hidden_menu>ul {
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     left: 0;
