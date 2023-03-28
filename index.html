@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달빛동물원</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc604c01cc.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        /* swiper 시작 */
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-top: 150px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 28%;
+            height: 100%;
+            object-fit: cover;
+            margin-right: 40px;
+            border: 5px solid white;
+            box-sizing: border-box;
+        }
+        .autoplay-progress {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--swiper-theme-color);
+        }
+        .autoplay-progress svg {
+            --progress: 0;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            stroke-width: 4px;
+            stroke: var(--swiper-theme-color);
+            fill: none;
+            stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(-90deg);
+        }
+        .swiper-pagination {
+            position: relative;
+            top: 750px!important;
+            left: -30px!important;
+        }
+        .swiper-pagination-bullet { 
+            width: 12px; 
+            height: 12px; 
+            background: transparent; 
+            border: 1px solid #ffff00; 
+            opacity: 1; 
+        }
+        .swiper-pagination-bullet-active { 
+            width: 40px; 
+            transition: width .5s; 
+            border-radius: 5px; 
+            background: #ffff00; 
+            border: 1px solid transparent; 
+        }
+        .swiper-button-next {
+            background: url(css/images/next.png) no-repeat;
+            background-size: 100%;
+            background-position: center;
+            width: 50px;
+        }
+        .swiper-button-prev {
+            background: url(css/images/prev.png) no-repeat;
+            background-size: 100%;
+            background-position: center;
+            width: 50px;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+        /* swiper 종료 */
+    </style>
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header id="header_wrap">
+        <div id="header_top">
+            <div class="header_logo">
+                <a href="#"><img src="css/images/Moonlight-logo.png" alt="logo"></a>
+            </div>
+            <nav id="header_nav">
+                <ul class="header_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="sub1.html">이용안내</a></li>
+                    <li><a href="sub2.html">프로그램</a></li>
+                    <li><a href="#">캠핑장 예약안내</a></li>
+                    <li><a href="#">공지 및 이벤트</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- 헤더 종료 -->
+    
+    <!-- wrapper 시작 -->
+    <div id="wrapper">
+        <!-- section1 시작 -->
+        <section id="section1">
+            <div class="s1_text">
+                <h1>MOONLIGHTZOO</h1>
+                <p>달빛동물원</p>
+            </div>
+        </section>
+        <!-- section1 종료 -->
+
+        <!-- section2 시작 -->
+        <section id="section2">
+            <div class="s2_wrap">
+                <div class="s2_text">
+                    <h2>INFORMATION</h2>
+                    <h1>이용안내 / 프로그램 / 캠핑장 예약안내</h1>
+                </div>
+                <div class="s2_boxArea">
+                    <div class="s2_box">
+                        <a href="#">
+                            <div class="s2_icon">
+                                <img src="css/images/s2_icon1.png" alt="s2_icon1">
+                            </div>
+                            <div class="s2_textArea">
+                                <h1>동물원 이용안내</h1>
+                                <p>동물원 이용시 입장료 및 할인안내 등<br>친절하게 안내해드리겠습니다</p>
+                                <div class="s2_btn">
+                                    <p>자세히보기</p><img src="css/images/c1_more1.png" alt="c1_more1">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s2_box">
+                        <a href="#">
+                            <div class="s2_icon">
+                                <img src="css/images/s2_icon2.png" alt="s2_icon2">
+                            </div>
+                            <div class="s2_textArea">
+                                <h1>동물원 프로그램</h1>
+                                <p>먹이주기/승마/초콜릿체험/실내 키즈카페 등<br>다양한 프로그램을 운영하고 있습니다</p>
+                                <div class="s2_btn">
+                                    <p>자세히보기</p><img src="css/images/c1_more2.png" alt="c1_more2">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s2_box">
+                        <a href="#">
+                            <div class="s2_icon">
+                                <img src="css/images/s2_icon3.png" alt="s2_icon3">
+                            </div>
+                            <div class="s2_textArea">
+                                <h1>캠핑장 예약안내</h1>
+                                <p>행복한 추억을 만드는 공간이 될 수 있도록<br>예약안내를 도와드리겠습니다</p>
+                                <div class="s2_btn">
+                                    <p>자세히보기</p><img src="css/images/c1_more3.png" alt="c1_more3">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section2 종료 -->
+
+        <!-- section3 시작 -->
+        <section id="section3">
+            <div class="swiper-pagination"></div>
+            <div class="s3_wrap">
+                <div class="s3_textArea">
+                    <h2>GALLERY</h2>
+                    <h1>동물원 갤러리</h1>
+                </div>
+                 <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="css/images/동물/s3_img1.jpg" alt=""><img src="css/images/동물/s3_img2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="css/images/동물/s3_img3.jpg" alt=""><img src="css/images/동물/s3_img4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="css/images/동물/s3_img5.jpg" alt=""><img src="css/images/동물/s3_img6.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="css/images/동물/s3_img7.jpg" alt=""><img src="css/images/동물/s3_img8.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="css/images/동물/s3_img9.jpg" alt=""><img src="css/images/동물/s3_img10.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section3 종료 -->
+
+        <!-- section4 시작 -->
+        <section id="section4">
+            <div class="s4_wrap">
+                <div class="s4_textArea">
+                    <div class="s4_title_icon">
+                        <img src="css/images/s4_title_icon.png" alt="s4_icon">
+                    </div>
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="s4_boxArea">
+                    <div class="s4_box">
+                        <div class="s4_icon"><i class="fa-solid fa-phone"></i></div>
+                        <h1>TEL</h1>
+                        <p>033-373-0995</p>
+                    </div>
+                    <div class="s4_box">
+                        <div class="s4_icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h1>E-MAIL</h1>
+                        <p>tsschamp017@naver.com</p>
+                    </div>
+                    <div class="s4_box">
+                        <div class="s4_icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <h1>ADDRESS</h1>
+                        <p>강원도 영월군 남면 나뱅이길61</p>
+                    </div>
+                    <div class="s4_box">
+                        <div class="s4_icon"><i class="fa-solid fa-clock"></i></div> 
+                        <h1>운영시간</h1>
+                        <p>09:00 ~ 18:00 [하절기 연장운영]<br>연중무휴</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section4 종료 -->
+    
+        <!-- footer 시작 -->
+        <footer>
+            <div class="ft_area">
+                <div class="ft_textArea">
+                    <p class="ft_text1">
+                        <a href="#">[개인정보처리방침]</a>
+                    </p>
+                    <p>(주)티에스에스챔프 ㅣ 대표이사 : 홍준기 ㅣ 사업자등록번호 : 727-81-00934 ㅣ 대표전화 : 033-373-0995 ㅣ E-Mail : tsschamp_2017@naver.com ㅣ 주소 : 강원도 영월군 남면 나뱅이길61
+                        <br>운영시간 : 09:00 ~ 18:00 [하절기 연장운영] ㅣ 휴무일 : 연중무휴
+                    </p>    
+                    <p class="ft_text2">
+                        COPYRIGHTⓒ (주)티에스에스챔프  All rights reserved ㅣ
+                        <a href="#">Designed by DWEBS</a> 
+                    </p>        
+                </div>           
+                <div class="ft_icon">
+                    <div class="ft_iconBox">
+                        <img src="css/images/blog_icon.png" alt="blog_icon">
+                    </div>
+                    <div class="ft_iconBox">
+                        <img src="css/images/cafe_icon.png" alt="cafe_icon">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer 종료 --> 
+    </div>
+    <!-- wrapper 종료 -->
+</body>
+</html>

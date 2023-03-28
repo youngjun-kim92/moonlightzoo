@@ -1,0 +1,103 @@
+@charset "utf-8";
+    @font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #header_wrap {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        z-index: 57;
+        background: none;
+        transition: all 0.3s;
+    }
+    #header_top {
+        height: 100%;
+        padding: 0 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_logo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header_logo img{
+        margin-left: 20px;
+        width: 290px;
+        margin-top: 10px;
+    }
+    #header_nav .header_menu{
+        list-style: none;
+        height: 100%;
+        display: flex;
+    }
+    #header_nav .header_menu>li {
+        display: inline-block;
+        margin-left: 85px;
+        vertical-align: middle;
+        text-align: center;
+        transition: all 3s;
+        position: relative;
+    }
+    #header_nav .header_menu>li>a {
+        color: #333;
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        letter-spacing: -1px;
+        font-weight: 700;
+        text-decoration: none;
+        font-family: 'NanumSqure', sans-serif;
+        transition: all 0.3s;
+        line-height: 100px;
+    }
+    #header_nav .header_menu>li>a:hover {
+        color: #63ab00;
+    }
+    footer {
+        background-color: #262a33;
+        padding: 40px 20px;  
+    }
+    .ft_area {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ft_textArea {
+        font-size: 13px;
+        font-weight: 300;
+        color: rgba(255,255,255,0.5);
+        line-height: 24px;
+        text-align: left;
+        padding-right: 50px;
+    }
+    .ft_text1 a {
+        color: white;
+        line-height: 18px;
+        text-decoration: none;
+    }
+    .ft_text2 a {
+        color: rgba(255,255,255,0.5);
+        line-height: 18px;
+        text-decoration: none;
+    }
+    .ft_icon {
+        display: flex;
+        margin-top: 0;
+        width: 113px;
+    }
+    .ft_iconBox {
+        margin-right: 25px;
+    }
