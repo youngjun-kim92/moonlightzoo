@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>달빛동물원(Mobile)</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'BMJUA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +26,7 @@
             text-decoration: none;
         }
         nav a:link, a:visited {
-            color: #fff;
+            color: #000;
         }
         nav a:active {
             color: #ff0;
@@ -37,23 +47,38 @@
         }
         header {
             width: 100%;
-            height: 300px;
-            background: url(css/images/section4_bg.jpg) no-repeat center;
-            background-size: cover;
+            /* height: 300px; */
+            /* background: url(css/images/section4_bg.jpg) no-repeat center; */
+            /* background-size: cover; */
         }
         nav {
+            display: flex;
             height: 50px;
-            background-color: #000;
+            background-color: #fff;
+            position: relative;
+        }
+        #main_logo { 
+            width: 25%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        #main_logo img {
+            width: 100%;
         }
         #main_nav {
             list-style: none;
             padding: 10px;
+            position: absolute;
+            right: 0;
         }
         #main_nav li {
             display: inline-block;
-            color: #fff;
+            color: #000;
             font-size: 0.8em;
             margin: 5px 15px;
+        }
+        #main_nav li a {
+            font-family: 'bmjua', sans-serif;
         }
         .photo {
             width: 100%;
@@ -67,8 +92,67 @@
             background-color: #000;
         }
         footer p {
+            font-family: 'bmjua',sans-serif;
             text-align: center;
             color: #fff;
+            font-size: 15px;
+        }
+        #home {
+            width: 100%;
+            height: 23vh;
+            background: url(css/images/section1_bg.jpg) no-repeat;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .page_title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            font-family: 'bmjua',sans-serif;
+        }
+        .page_title h2 {
+            font-size: 10px;
+            letter-spacing: 5px;
+            color: #63ab00;
+            margin-bottom: 10px;
+        }
+        .page_title h1 {
+            letter-spacing: 3px;
+        }
+        #info {
+            width: 100%;
+            height: 23vh;
+            background: url(css/images/section2_bg.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+        .content {
+            padding: 20px;
+        }
+        .text {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-top: 40px;
+        }
+        .text p {
+            font-size: 15px;
+            line-height: 2.5;
+            text-align: center;
+        }
+        #program {
+            width: 100%;
+            height: 23vh;
+            background: url(css/images/section3_bg.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+        #reserve {
+            width: 100%;
+            height: 23vh;
+            background: url(css/images/section4_bg.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+        #reserve h1, #reserve p {
+            color: #ff0;
         }
     </style>
 </head>
@@ -77,6 +161,9 @@
     <div id="container">
         <header>
             <nav>
+                <div id="main_logo">
+                    <img src="css/images/Moonlight-logo.png" alt="Moonlight-logo">
+                </div>
                 <ul id="main_nav">
                     <li><a href="#info">이용안내</a></li>
                     <li><a href="#program">프로그램</a></li>
@@ -84,13 +171,16 @@
                 </ul>
             </nav>
         </header>
-        <section id="info">
+        <section id="home">
             <div class="page_title">
-                <h1>이용안내</h1>
+                <h2>MOONLIGHTZOO</h2>
+                <h1>달빛동물원</h1>
             </div>
+        </section>
+        <section id="info">
             <div class="content">
-                <div class="photo">
-                    <img src="css/images/section1_bg.jpg" alt="section1_bg">
+                <div class="page_title">
+                    <h1>이용안내</h1>
                 </div>
                 <div class="text">
                     <p>오전09:00 ~ 오후06:00 (하절기 연장운영, 연중무휴)</p>
@@ -99,12 +189,9 @@
             </div>
         </section>
         <section id="program">
-            <div class="page_title">
-                <h1>프로그램</h1>
-            </div>
             <div class="content">
-                <div class="photo">
-                    <img src="css/images/section2_bg.jpg" alt="section2_bg">
+                <div class="page_title">
+                    <h1>프로그램</h1>
                 </div>
                 <div class="text">
                     <p>먹이주기/승마/초콜릿체험/실내 키즈카페 등</p>
@@ -113,12 +200,9 @@
             </div>
         </section>
         <section id="reserve">
-            <div class="page_title">
-                <h1>캠핑장 예약안내</h1>
-            </div>
             <div class="content">
-                <div class="photo">
-                    <img src="css/images/section3_bg.jpg" alt="section3_bg">
+                <div class="page_title">
+                    <h1>캠핑장 예약안내</h1>
                 </div>
                 <div class="text">
                     <p>행복한 추억을 만드는 공간이 될 수 있도록</p>
