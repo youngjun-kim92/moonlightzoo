@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달빛동물원(Mobile)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav a:link, a:visited {
+            color: #fff;
+        }
+        nav a:active {
+            color: #ff0;
+        }
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 2.5;
+        }
+        li {
+            font-size: 1em;
+            line-height: 2;
+        }
+        #container {
+            width: 100%;
+        }
+        header {
+            width: 100%;
+            height: 300px;
+            background: url(css/images/section4_bg.jpg) no-repeat center;
+            background-size: cover;
+        }
+        nav {
+            height: 50px;
+            background-color: #000;
+        }
+        #main_nav {
+            list-style: none;
+            padding: 10px;
+        }
+        #main_nav li {
+            display: inline-block;
+            color: #fff;
+            font-size: 0.8em;
+            margin: 5px 15px;
+        }
+        .photo {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+        }
+        footer {
+            background-color: #000;
+        }
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 기본적인 레이아웃 -->
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main_nav">
+                    <li><a href="#info">이용안내</a></li>
+                    <li><a href="#program">프로그램</a></li>
+                    <li><a href="#reserve">캠핑장 예약안내</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="info">
+            <div class="page_title">
+                <h1>이용안내</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="css/images/section1_bg.jpg" alt="section1_bg">
+                </div>
+                <div class="text">
+                    <p>오전09:00 ~ 오후06:00 (하절기 연장운영, 연중무휴)</p>
+                    <p>마감 1시간 전까지 발권 가능</p>
+                </div>
+            </div>
+        </section>
+        <section id="program">
+            <div class="page_title">
+                <h1>프로그램</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="css/images/section2_bg.jpg" alt="section2_bg">
+                </div>
+                <div class="text">
+                    <p>먹이주기/승마/초콜릿체험/실내 키즈카페 등</p>
+                    <p>다양한 프로그램을 운영하고 있습니다</p>
+                </div>
+            </div>
+        </section>
+        <section id="reserve">
+            <div class="page_title">
+                <h1>캠핑장 예약안내</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="css/images/section3_bg.jpg" alt="section3_bg">
+                </div>
+                <div class="text">
+                    <p>행복한 추억을 만드는 공간이 될 수 있도록</p>
+                    <p>예약안내를 도와드리겠습니다</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>COPYRIGHTⓒ (주)티에스에스챔프  All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
